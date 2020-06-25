@@ -2,9 +2,9 @@
 
 ### Indeed_scrap:
 
-Here is a scrap of Indeed website extacting review details of a random company.
+Here is a scrap of Indeed website extracting review details of a random company.
 
-It demonstrate the use of scrapy crawler and Rules. An alternative could <br>
+It demonstrates the use of scrapy crawler and Rules. An alternative could <br>
 have been to use the absolute URLs and a Request object to get to the <br>
 next page but I wanted to show how LinkExtractor could give same result.
 
@@ -13,3 +13,11 @@ FEED_EXPORT_FIELDS = ['job_title', 'location', 'date', 'rating', 'title', 'comme
 
 Do not hesistate to contact me if you find a more efficient way to get <br>
 the same result or if any improvements can be made.
+
+### Glassdoor_scrap:
+
+Here is a scrap of Glassdoor website extracting same details as above. <br>
+
+It demonstrates the use of scrapy splash to handle javascript pages,<br>
+and also the use of the FormRequest.from_response to handle the login page.<br>
+

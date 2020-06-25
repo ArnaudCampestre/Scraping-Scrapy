@@ -22,8 +22,8 @@ class GdSpider(scrapy.Spider):
         token = response.xpath('//form/input[@name="gdToken"]/@value').extract()
         yield scrapy.FormRequest.from_response(
             response,
-            formdata={'username': 'campestrearnaud@gmail.com',
-                      'password': 'Finalfantasy0',
+            formdata={'username': 'your username',
+                      'password': 'your password',
                       'gdToken': token},
             callback=self.after_login
         )
